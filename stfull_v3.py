@@ -151,7 +151,7 @@ def main():
     output_file = "output_results.txt"
     export_results(data, output_file)
 
-    print("\nDocking 100% concluído")
+    print("\nDocking concluído")
     print("Dados exportados com sucesso!!")
     print("Verifique o arquivo output_results.txt")
 
