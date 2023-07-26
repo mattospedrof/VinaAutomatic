@@ -8,7 +8,7 @@ import time
 # Running the docking
 def run_docking(vina_path, ligand_file, receptor_file, output_prefix, center_x, center_y, center_z, size_x, size_y, size_z, energy_range, exhaustiveness, num_rounds):
     for i in range(1, num_rounds + 1):
-        print(f"\nRodada: {i}\n")
+        print(f"\nRound: {i}\n")
         subprocess.run(
             [
                 vina_path,
@@ -112,7 +112,7 @@ def main():
     start_time = time.time()
 
     for i in range(1, num_rounds + 1):
-        print(f"\nRodada: {i}\n")
+        print(f"\nRound: {i}\n")
         round_start_time = time.time()
 
         subprocess.run(
@@ -148,10 +148,10 @@ def main():
     export_results(data, output_file)
 
     print(
-        "\nThank you for your support!"
-        "Successfully exported data!"
-        "Check the file output_results.txt"
-        "Visit github for more info:"
+        "\n- Thank you for your support!\n"
+        "- Successfully exported data!\n"
+        "- Check the file output_results.txt\n"
+        "- Visit github for more info:\n"
         "https://github.com/Frannkz10/Automatic-Autodock-Vina"
     )
 
