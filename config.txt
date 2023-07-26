@@ -1,0 +1,14 @@
+[Docking]
+vina_path = /usr/bin/vina
+receptor = protein.pdbqt
+ligand = ligand.pdbqt
+output_prefix = output_docking
+center_x = 000.000
+center_y = 000.000
+center_z = 000.000
+size_x = 00
+size_y = 00
+size_z = 00
+exhaustiveness = 0
+energy_range = 0
+num_rounds = 0
