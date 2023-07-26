@@ -1,4 +1,5 @@
 # Automatic-Vina
+- Valid for vina version 1.1.2
 - Script for vina automation and export of affinity values.
 - Replace in the config file the parameters and file names according to your docking system.
 - The variable 'vina_path' corresponds to the path to the vina executable.
