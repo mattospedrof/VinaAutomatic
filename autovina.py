@@ -5,7 +5,7 @@ import configparser
 import sys
 import time
 
-
+# Running the docking
 def run_docking(vina_path, ligand_file, receptor_file, output_prefix, center_x, center_y, center_z, size_x, size_y, size_z, energy_range, exhaustiveness, num_rounds):
     for i in range(1, num_rounds + 1):
         print(f"\nRodada: {i}\n")
@@ -29,14 +29,14 @@ def run_docking(vina_path, ligand_file, receptor_file, output_prefix, center_x, 
 
 
 def process_results(input_directory, num_rounds):
-    # Diretório de entrada contendo os arquivos de log do Vina
+    # Input directory containing the Vina log files
     receptor_file = os.path.join(input_directory, "receptor.pdbqt")
 
-    # Lista para armazenar os dados de afinidade
+    # List for storing affinity data
     data = []
     pattern = r"\s+(\d+)\s+([-+]?\d*\.\d+|\d+)"
 
-    # Percorrer os arquivos de log na pasta de entrada
+    # Browse the log files in the input folder
     for i in range(1, num_rounds + 1):
         filename = f"output_docking_{i}.log"
         file_path = os.path.join(input_directory, filename)
@@ -48,7 +48,7 @@ def process_results(input_directory, num_rounds):
             with open(file_path, "r") as file:
                 content = file.read()
 
-                # Encontrar os dados de afinidade usando expressões regulares
+                # Finding the affinity data using regular expressions
                 matches = re.findall(pattern, content)
 
                 affinity_data = []
@@ -63,10 +63,9 @@ def process_results(input_directory, num_rounds):
                         affinity_data.append(["", mode, affinity])
 
             data.extend(affinity_data)
-            data.append([])  # Adicionar linha em branco para separar os conjuntos de dados
+            data.append([])  # Add blank row to separate datasets
 
     return data
-
 
 def export_results(data, output_file):
     with open(output_file, "w") as file:
@@ -77,22 +76,19 @@ def export_results(data, output_file):
             else:
                 file.write("\n")
 
-
 def format_time(seconds):
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
     return f"{days:02.0f}d {hours:02.0f}h {minutes:02.0f}min {seconds:02.0f}s"
 
-
 def main():
-    print('\nO seu docking já vai começar, aguarde!!')
-    print('Obrigado pelo apoio!!')
+    print('\nDocking will start soon, please wait.')
 
     config_file = 'config.txt'
 
     if not os.path.isfile(config_file):
-        print(f"Arquivo de configuração '{config_file}' não encontrado!")
+        print(f"Config file '{config_file}' not found!")
         return
 
     config = configparser.ConfigParser()
@@ -143,7 +139,7 @@ def main():
 
         estimated_time_remaining = (total_time / i) * (num_rounds - i)
 
-        sys.stdout.write(f"\nÚltima Simulação: {round_time:.2f}s | Tempo Estimado Restante: {format_time(estimated_time_remaining)}\n")
+        sys.stdout.write(f"\nLatest Simulation: {round_time:.2f}s | Estimated Time Remaining: {format_time(estimated_time_remaining)}\n")
         sys.stdout.flush()
 
     input_directory = os.path.dirname(receptor_file)
@@ -151,10 +147,13 @@ def main():
     output_file = "output_results.txt"
     export_results(data, output_file)
 
-    print("\nDocking concluído")
-    print("Dados exportados com sucesso!!")
-    print("Verifique o arquivo output_results.txt")
-
+    print(
+        "\nThank you for your support!"
+        "Successfully exported data!"
+        "Check the file output_results.txt"
+        "Visit github for more info:"
+        "https://github.com/Frannkz10/Automatic-Autodock-Vina"
+    )
 
 if __name__ == "__main__":
     main()
