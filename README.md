@@ -8,6 +8,8 @@ python autovina.py
 - For linux or wsl2, run in the terminal:
 python3 autovina.py
 
+- 'div_output.py' extracts only one pdbqt model you want
+- 'measure.py' calculates the distance between atoms receptor and ligand, and for the receptor only one chain is accepted at each run. The same is true for ligand.
 
 # Citation
 Trott O, Olson AJ. AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. J Comput Chem. 30 de janeiro de 2010;31(2):455–61.
