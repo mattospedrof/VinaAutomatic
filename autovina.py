@@ -152,7 +152,7 @@ def main():
         "- Successfully exported data!\n"
         "- Check the file output_results.txt\n"
         "- Visit github for more info:\n"
-        "https://github.com/Frannkz10/Automatic-Autodock-Vina"
+        "https://github.com/mattospedrof/Automatic-Autodock-Vina"
     )
 
 if __name__ == "__main__":

@@ -88,5 +88,5 @@ print(
     "\nYour distance data has been successfully exported.\n"
     f"Check the output file {output_name}.txt.\n"
     "For any question, visit the github:\n"
-    "https://github.com/Frannkz10/Automatic-Autodock-Vina"
+    "https://github.com/mattospedrof/Automatic-Autodock-Vina"
 )
