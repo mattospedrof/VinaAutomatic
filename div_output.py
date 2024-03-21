@@ -24,7 +24,7 @@ def read_pdbqt(number_model, name_archive_pdbqt, name_desired_file):
             desired_file.write(excerpt_model)
 
         print(
-            f"\nThe model excerpt {number_model} was written in the file {name_desired_file} \n"
+            f"\nThe model excerpt {number_model} was written in the file {name_desired_file}.\n"
             "Thank you for your support\n"
             "For any question, visit the github:\n"
             "https://github.com/mattospedrof/Automatic-Autodock-Vina"
