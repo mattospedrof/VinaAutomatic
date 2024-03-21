@@ -47,6 +47,22 @@ python measure.py
 ```
 The results will be exported to the directory where the script is run.
 
+# Analysis
+This module has two functions:
+- Transform the results of the measure module into an Excel spreadsheet.
+- Create a boxplot graph of the distance measurements using python's matplotlib library. In the future, the code will analyze several plots at the same time.
+
+Running
+- For Windows and Linux, run at the prompt command:
+``` python
+python analysis.py
+```
+The results will be exported to the directory where the script is run.
+
+###
+For any problems or suggestions, send an email to (francobiomed@gmail.com).
+###
+
 # Citation
 <p style="text-align: justify;">
 Trott O, Olson AJ. AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. J Comput Chem. 30 de janeiro de 2010;31(2):455–61.
