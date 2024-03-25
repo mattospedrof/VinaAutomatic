@@ -66,4 +66,6 @@ For any problems or suggestions, send an email to (francobiomed@gmail.com).
 # Citation
 <p style="text-align: justify;">
 Trott O, Olson AJ. AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading. J Comput Chem. 30 de janeiro de 2010;31(2):455–61.
+
+Cock, P.J.A. et al. Biopython: freely available Python tools for computational molecular biology and bioinformatics. Bioinformatics 2009 Jun 1; 25(11) 1422-3 https://doi.org/10.1093/bioinformatics/btp163 pmid:19304878
 </p>
