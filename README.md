@@ -35,6 +35,18 @@ python div_output.py
 ```
 The results will be exported to the directory where the script is run.
 
+# Div_files
+<p style="text-align: justify;">
+This module divides all output_docking files into folders for easy organization.
+</p>
+
+Running
+- For Windows and Linux, run at the prompt command:
+``` python
+python div_files.py
+```
+The results are view in real time.
+
 # Measure
 <p style="text-align: justify;">
 This module performs the Euclidean calculation of atomic distances between receptor and ligand. To visualize them, use the Pymol software, for example (https://pymol.org/). So far, the script supports choosing one receptor chain at a time.
