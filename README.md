@@ -25,7 +25,7 @@ The results will be exported to the directory where the script is run.
 
 # Div_output
 <p style="text-align: justify;">
-This module aims to obtain specific models of a docking result. So far, only one model can be obtained at a time. Note that the output file will contain the round number and the model number. For example, if a simulation had 30 rounds, and you want model 7 from round 20, the output file for this module will be 'output_docking_20_7.pdbqt'.
+This module extracts all the models from an output_docking, regardless of how many there are.
 </p>
 
 Running
@@ -33,7 +33,7 @@ Running
 ``` python
 python div_output.py
 ```
-The results will be exported to the directory where the script is run.
+The results will be exported to the directory.
 
 # Div_files
 <p style="text-align: justify;">
