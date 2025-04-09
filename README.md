@@ -59,6 +59,18 @@ python measure.py
 ```
 The results will be exported to the directory where the script is run.
 
+# Measure_membrane
+<p style="text-align: justify;">
+This module calculates distances specifically for cell membranes using all files, generating distance data for all models in output_docking format. Ions and other elements are not included for the time being. Due to the limitations of the conversion to PDBQT, phospholipids will only be described as DPP.
+</p>
+
+Running
+- For Windows and Linux, run at the prompt command:
+``` python
+python measure_membrane.py
+```
+The results will be exported in each output_docking folder under legend_distance.
+
 # Analysis
 This module has two functions:
 - Transform the results of the measure module into an Excel spreadsheet.
@@ -73,6 +85,7 @@ The results will be exported to the directory where the script is run.
 
 ###
 For any problems or suggestions, send an email to (francobiomed@gmail.com).
+Don't forget to mention this repository in your methodology.
 ###
 
 # Citation
