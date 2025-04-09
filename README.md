@@ -1,3 +1,5 @@
+![Badge em Desenvolvimento](https://img.shields.io/badge/Status-In_Development-darkblue)
+
 # Autovina
 <p style="text-align: justify;">
 This python-designed module aims to automate docking simulations using Autodock-Vina in order to minimize the time it takes to carry out extensive simulations.
